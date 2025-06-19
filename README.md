@@ -1,3 +1,7 @@
+# jsx-inject
+
+![npm](https://img.shields.io/npm/v/jsx-inject)
+
 `jsx-inject` is a CLI tool that helps you easily transform repetitive code by automatically wrapping specific JSX elements or adding desired import statements across multiple React component files in your project.
 
 It is useful for large-scale refactoring, applying design systems, or adding common wrappers.

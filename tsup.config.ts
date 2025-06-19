@@ -4,7 +4,7 @@ export default defineConfig({
   entry: ['src/index.ts'],
   outDir: 'bin',
   format: ['esm'],
-  external: ['fast-glob', 'ts-morph'],
+  external: ['fast-glob', 'ts-morph', 'typescript', 'commander'],
   splitting: false,
   clean: true,
   treeshake: true,

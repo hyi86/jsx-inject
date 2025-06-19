@@ -3,6 +3,12 @@
   "version": "0.0.1",
   "private": false,
   "description": "A CLI tool to batch-modify React components that match specific conditions.",
+  "keywords": [
+    "react",
+    "jsx",
+    "inject",
+    "cli"
+  ],
   "repository": "https://github.com/hyi86/jsx-inject.git",
   "license": "MIT",
   "author": "henry hong <hyi8656@gmail.com>",
@@ -15,7 +21,8 @@
     "postbuild": "chmod +x bin/*",
     "check-types": "tsc --noEmit",
     "dev": "tsx src/index.ts",
-    "lint": "eslint . --max-warnings 0"
+    "lint": "eslint . --max-warnings 0",
+    "test": "vitest"
   },
   "dependencies": {
     "commander": "^14.0.0",
@@ -29,7 +36,6 @@
     "@types/node": "^24.0.3",
     "@types/react": "^19.1.8",
     "@types/react-dom": "^19.1.6",
-    "colors": "^1.4.0",
     "eslint": "^9.29.0",
     "eslint-config-prettier": "^10.1.5",
     "eslint-plugin-only-warn": "^1.1.0",

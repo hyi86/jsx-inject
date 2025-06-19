@@ -1,6 +1,7 @@
 import ts from 'typescript';
 import path from 'node:path';
 import { Project } from 'ts-morph';
+import { configFilePath } from '~/config';
 
 export function getImportRealPath(importPath: string) {
   const project = new Project({
@@ -10,7 +11,7 @@ export function getImportRealPath(importPath: string) {
 
   const resolved = ts.resolveModuleName(
     importPath,
-    path.resolve('jsx-inject.config.json'), // from path
+    path.resolve(configFilePath), // from path
     compilerOptions,
     ts.sys
   );

@@ -5,8 +5,7 @@ import { run as runFile } from './modes/file';
 import { cliSchema } from './types';
 import fs from 'node:fs';
 import { prettyLog, red, yellow } from './lib/console';
-
-const configFilePath = 'jsx-inject.config.json';
+import { configFilePath } from './config';
 
 const program = new Command();
 

@@ -25,7 +25,8 @@
     "check-types": "tsc --noEmit",
     "dev": "tsx src/index.ts",
     "lint": "eslint . --max-warnings 0",
-    "test": "vitest"
+    "test": "vitest",
+    "ci:publish": "pnpm publish"
   },
   "dependencies": {
     "commander": "^14.0.0",
@@ -36,6 +37,7 @@
     "zod": "^3.25.67"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.29.4",
     "@eslint/js": "^9.29.0",
     "@types/node": "^24.0.3",
     "@types/react": "^19.1.8",

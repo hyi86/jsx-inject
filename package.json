@@ -9,12 +9,15 @@
     "inject",
     "cli"
   ],
-  "repository": "https://github.com/hyi86/jsx-inject.git",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hyi86/jsx-inject.git"
+  },
   "license": "MIT",
   "author": "henry hong <hyi8656@gmail.com>",
   "type": "module",
   "bin": {
-    "jsx-inject": "./bin/index.js"
+    "jsx-inject": "bin/index.js"
   },
   "scripts": {
     "build": "tsup",
